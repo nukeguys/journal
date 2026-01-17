@@ -1,0 +1,14 @@
+/* index.md 파일을 포함하는 탐색기 항목 전체를 숨깁니다. */
+.tree-item:has(> .nav-file-title[data-path$="index.md"]),
+.tree-item:has(> .nav-file-title[data-path$="/index.md"]),
+.tree-item:has(> .tree-item-self[data-path$="index.md"]),
+.tree-item:has(> .tree-item-self[data-path$="/index.md"]) {
+  display: none !important;
+}
+
+/* public 폴더를 포함하는 탐색기 항목 전체를 숨깁니다. */
+.tree-item:has(> .nav-folder-title[data-path="public"]),
+.tree-item:has(> .nav-folder-title[data-path$="/public"]) {
+  display: none !important;
+}
+

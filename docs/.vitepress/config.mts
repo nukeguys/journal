@@ -1,10 +1,29 @@
 import { defineConfig } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
+import wikilinks from "markdown-it-wikilinks";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "nukeguys",
   description: "Record unorganized thoughts. Keep organized notes.",
+
+  markdown: {
+    config: (md: any) => {
+      md.use(
+        wikilinks({
+          baseURL: "/",
+          relativeBaseURL: "./",
+          suffix: "",
+          generatePageNameFromLabel: (label: string) => {
+            return label;
+          },
+          postProcessPageName: (pageName: string) => {
+            return pageName.trim();
+          },
+        }),
+      );
+    },
+  },
 
   // _로 시작하는 폴더 제외
   srcExclude: ["**/_*/**", "**/_*.md"],
@@ -22,7 +41,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Notes", link: "/notes/" },
-      { text: "Learning", link: "/learning/" },
+      { text: "Learn", link: "/learn/" },
     ],
 
     // 사이드바 자동 생성
@@ -35,17 +54,21 @@ export default defineConfig({
         useTitleFromFileHeading: true,
         useFolderTitleFromIndexFile: true,
         useFolderLinkFromIndexFile: true,
+        rootGroupText: "Notes",
+        rootGroupLink: "/",
         collapsed: true,
         excludePattern: ["index.md"],
       },
       {
         documentRootPath: "docs",
-        scanStartPath: "learning",
-        basePath: "/learning/",
-        resolvePath: "/learning/",
+        scanStartPath: "learn",
+        basePath: "/learn/",
+        resolvePath: "/learn/",
         useTitleFromFileHeading: true,
         useFolderTitleFromIndexFile: true,
         useFolderLinkFromIndexFile: true,
+        rootGroupText: "Learn",
+        rootGroupLink: "/",
         collapsed: true,
         excludePattern: ["index.md"],
       },

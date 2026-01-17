@@ -21,8 +21,8 @@ features:
     link: /notes/
     linkText: 둘러보기
   - icon: 📖
-    title: Learning
+    title: Learn
     details: 학습한 내용과 기술 노트를 정리합니다.
-    link: /learning/
+    link: /learn/
     linkText: 둘러보기
 ---

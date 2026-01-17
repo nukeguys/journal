@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      markdown-it-wikilinks:
+        specifier: ^1.4.0
+        version: 1.4.0
       vitepress:
         specifier: ^1.6.4
         version: 1.6.4(@algolia/client-search@5.46.3)(postcss@8.5.6)(search-insights@2.17.3)
@@ -659,6 +662,9 @@ packages:
     resolution: {integrity: sha512-zCnTtlxNoAiDc3gqY2aYAWFx7XWWiasuF2K8Me5WbN8otHKTUKBwjPtNpRs/rbUZm7KxWAaNj7P1a/p52GbVug==}
     engines: {node: '>=0.10.0'}
 
+  extend@3.0.2:
+    resolution: {integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==}
+
   focus-trap@7.8.0:
     resolution: {integrity: sha512-/yNdlIkpWbM0ptxno3ONTuf+2g318kh2ez3KSeZN5dZ8YC6AAmgeWz+GasYYiBJPFaYcSAPeu4GfhUaChzIJXA==}
 
@@ -729,6 +735,12 @@ packages:
   mark.js@8.11.1:
     resolution: {integrity: sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==}
 
+  markdown-it-regexp@0.4.0:
+    resolution: {integrity: sha512-0XQmr46K/rMKnI93Y3CLXsHj4jIioRETTAiVnJnjrZCEkGaDOmUxTbZj/aZ17G5NlRcVpWBYjqpwSlQ9lj+Kxw==}
+
+  markdown-it-wikilinks@1.4.0:
+    resolution: {integrity: sha512-LJhRWett3Do9doMMkpodOV5pvAMZjOOODqcifPfd+jdobhdg3UY8i824L5657UBWx7HSbOqicwNUzcVjOiswgw==}
+
   mdast-util-to-hast@13.2.1:
     resolution: {integrity: sha512-cctsq2wp5vTsLIcaymblUriiTcZd0CwWtCbLvrOzYCDZoWyMNV8sZ7krj09FSnsiJi3WVsHLM4k6Dq/yaPyCXA==}
 
@@ -796,6 +808,10 @@ packages:
   property-information@7.1.0:
     resolution: {integrity: sha512-TwEZ+X+yCJmYfL7TPUOcvBZ4QfoT5YenQiJuX//0th53DE6w0xxLEtfK3iyryQFddXuvkIk51EEgrJQ0WJkOmQ==}
 
+  punycode@2.3.1:
+    resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
+    engines: {node: '>=6'}
+
   qsu@1.11.0:
     resolution: {integrity: sha512-ymAVupKRbaL735rWhEhMyEHY9PjW5WYeiO93tunUTCRBjFv1wImwBzhXcKZDYeiDUhpUN2earPu67pngGO2Ipw==}
     engines: {node: '>=18.0.0'}
@@ -809,6 +825,10 @@ packages:
   regex@6.1.0:
     resolution: {integrity: sha512-6VwtthbV4o/7+OaAF9I5L5V3llLEsoPyq9P1JVXkedTP33c7MfCG0/5NOPcSJn0TzXcG9YUrR0gQSWioew3LDg==}
 
+  reurl@https://codeload.github.com/jsepia/reurl/tar.gz/a3210117636c115fb139517fcfb2ea929025cded:
+    resolution: {tarball: https://codeload.github.com/jsepia/reurl/tar.gz/a3210117636c115fb139517fcfb2ea929025cded}
+    version: 1.0.0-rc.2
+
   rfdc@1.4.1:
     resolution: {integrity: sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==}
 
@@ -816,6 +836,9 @@ packages:
     resolution: {integrity: sha512-wDv/Ht1BNHB4upNbK74s9usvl7hObDnvVzknxqY/E/O3X6rW1U1rV1aENEfJ54eFZDTNo7zv1f5N4edCluH7+A==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
+
+  sanitize-filename@1.6.3:
+    resolution: {integrity: sha512-y/52Mcy7aw3gRm7IrcGDFx/bCk4AhRh2eI9luHOQM86nZsqwiRkkq2GekHXBBD+SmPidc8i2PqtYZl+pWJ8Oeg==}
 
   search-insights@2.17.3:
     resolution: {integrity: sha512-RQPdCYTa8A68uM2jwxoY842xDhvx3E5LFL1LxvxCNMev4o5mLuokczhzjAgGwUZBAmOKZknArSxLKmXtIi2AxQ==}
@@ -849,6 +872,9 @@ packages:
   speakingurl@14.0.1:
     resolution: {integrity: sha512-1POYv7uv2gXoyGFpBCmpDVSNV74IfsWlDW216UPjbWufNf+bSU6GdbDsxdcxtfwb4xlI3yxzOTKClUosxARYrQ==}
     engines: {node: '>=0.10.0'}
+
+  spec-url@2.0.0-dev.1:
+    resolution: {integrity: sha512-NKE2wT6tsvYa4xfVFcnjxSDFJwDOwU1NU2NhfnxFksutZrOShZ2p7pgQWS98Evq0cHMGBBjGQlbwrcAHLDywfw==}
 
   sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
@@ -886,6 +912,9 @@ packages:
   trim-lines@3.0.1:
     resolution: {integrity: sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg==}
 
+  truncate-utf8-bytes@1.0.2:
+    resolution: {integrity: sha512-95Pu1QXQvruGEhv62XCMO3Mm90GscOCClvrIUwCM0PYOXK3kaF3l3sIHxx71ThJfcbM2O5Au6SO3AWCSEfW4mQ==}
+
   unist-util-is@6.0.1:
     resolution: {integrity: sha512-LsiILbtBETkDz8I9p1dQ0uyRUWuaQzd/cuEeS1hoRSyW5E5XGmTzlwY1OrNzzakGowI9Dr/I8HVaw4hTtnxy8g==}
 
@@ -900,6 +929,9 @@ packages:
 
   unist-util-visit@5.0.0:
     resolution: {integrity: sha512-MR04uvD+07cwl/yhVuVWAtw+3GOR/knlL55Nd/wAdblk27GCVt3lqpTivy/tkJcZoNPzTwS1Y+KMojlLDhoTzg==}
+
+  utf8-byte-length@1.0.5:
+    resolution: {integrity: sha512-Xn0w3MtiQ6zoz2vFyUVruaCL53O/DwUvkEeOvj+uulMm0BkUGYWmBYVyElqZaSLhY6ZD0ulfU3aBra2aVT4xfA==}
 
   vfile-message@4.0.3:
     resolution: {integrity: sha512-QTHzsGd1EhbZs4AsQ20JX1rC3cOlt/IWJruk893DfLRr57lcnOeMaWG4K0JrRta4mIJZKth2Au3mM3u03/JWKw==}
@@ -1574,6 +1606,8 @@ snapshots:
     dependencies:
       is-extendable: 0.1.1
 
+  extend@3.0.2: {}
+
   focus-trap@7.8.0:
     dependencies:
       tabbable: 6.4.0
@@ -1651,6 +1685,15 @@ snapshots:
 
   mark.js@8.11.1: {}
 
+  markdown-it-regexp@0.4.0: {}
+
+  markdown-it-wikilinks@1.4.0:
+    dependencies:
+      extend: 3.0.2
+      markdown-it-regexp: 0.4.0
+      reurl: https://codeload.github.com/jsepia/reurl/tar.gz/a3210117636c115fb139517fcfb2ea929025cded
+      sanitize-filename: 1.6.3
+
   mdast-util-to-hast@13.2.1:
     dependencies:
       '@types/hast': 3.0.4
@@ -1721,6 +1764,8 @@ snapshots:
 
   property-information@7.1.0: {}
 
+  punycode@2.3.1: {}
+
   qsu@1.11.0: {}
 
   regex-recursion@6.0.2:
@@ -1732,6 +1777,10 @@ snapshots:
   regex@6.1.0:
     dependencies:
       regex-utilities: 2.3.0
+
+  reurl@https://codeload.github.com/jsepia/reurl/tar.gz/a3210117636c115fb139517fcfb2ea929025cded:
+    dependencies:
+      spec-url: 2.0.0-dev.1
 
   rfdc@1.4.1: {}
 
@@ -1766,6 +1815,10 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.55.1
       fsevents: 2.3.3
 
+  sanitize-filename@1.6.3:
+    dependencies:
+      truncate-utf8-bytes: 1.0.2
+
   search-insights@2.17.3: {}
 
   section-matter@1.0.0:
@@ -1797,6 +1850,10 @@ snapshots:
   space-separated-tokens@2.0.2: {}
 
   speakingurl@14.0.1: {}
+
+  spec-url@2.0.0-dev.1:
+    dependencies:
+      punycode: 2.3.1
 
   sprintf-js@1.0.3: {}
 
@@ -1835,6 +1892,10 @@ snapshots:
 
   trim-lines@3.0.1: {}
 
+  truncate-utf8-bytes@1.0.2:
+    dependencies:
+      utf8-byte-length: 1.0.5
+
   unist-util-is@6.0.1:
     dependencies:
       '@types/unist': 3.0.3
@@ -1857,6 +1918,8 @@ snapshots:
       '@types/unist': 3.0.3
       unist-util-is: 6.0.1
       unist-util-visit-parents: 6.0.2
+
+  utf8-byte-length@1.0.5: {}
 
   vfile-message@4.0.3:
     dependencies:
