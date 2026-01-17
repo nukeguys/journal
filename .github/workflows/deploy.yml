@@ -42,3 +42,41 @@ jobs:
     steps:
       - uses: actions/deploy-pages@v4
         id: deployment
+
+      - name: Slack Notification on Success
+        if: success()
+        uses: slackapi/slack-github-action@v2.0.0
+        with:
+          webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
+          webhook-type: incoming-webhook
+          payload: |
+            {
+              "attachments": [
+                {
+                  "color": "#36a64f",
+                  "title": "🚀 배포 성공: nukeguys Journal",
+                  "title_link": "https://journal.kkick.xyz",
+                  "text": "새로운 콘텐츠가 성공적으로 배포되었습니다.\n*커밋:* ${{ github.event.head_commit.message }}",
+                  "footer": "GitHub Actions",
+                  "ts": ${{ github.event.head_commit.timestamp }}
+                }
+              ]
+            }
+
+      - name: Slack Notification on Failure
+        if: failure()
+        uses: slackapi/slack-github-action@v2.0.0
+        with:
+          webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
+          webhook-type: incoming-webhook
+          payload: |
+            {
+              "attachments": [
+                {
+                  "color": "#ff0000",
+                  "title": "⚠️ 배포 실패: nukeguys Journal",
+                  "text": "배포 작업 중 오류가 발생했습니다. 로그를 확인해 주세요.",
+                  "footer": "GitHub Actions"
+                }
+              ]
+            }
