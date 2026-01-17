@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import { generateSidebar } from "vitepress-sidebar";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -24,20 +25,31 @@ export default defineConfig({
       { text: "Learning", link: "/learning/" },
     ],
 
-    sidebar: {
-      "/notes/": [
-        {
-          text: "Notes",
-          items: [{ text: "소개", link: "/notes/" }],
-        },
-      ],
-      "/learning/": [
-        {
-          text: "Learning",
-          items: [{ text: "소개", link: "/learning/" }],
-        },
-      ],
-    },
+    // 사이드바 자동 생성
+    sidebar: generateSidebar([
+      {
+        documentRootPath: "docs",
+        scanStartPath: "notes",
+        basePath: "/notes/",
+        resolvePath: "/notes/",
+        useTitleFromFileHeading: true,
+        useFolderTitleFromIndexFile: true,
+        useFolderLinkFromIndexFile: true,
+        collapsed: true,
+        excludePattern: ["index.md"],
+      },
+      {
+        documentRootPath: "docs",
+        scanStartPath: "learning",
+        basePath: "/learning/",
+        resolvePath: "/learning/",
+        useTitleFromFileHeading: true,
+        useFolderTitleFromIndexFile: true,
+        useFolderLinkFromIndexFile: true,
+        collapsed: true,
+        excludePattern: ["index.md"],
+      },
+    ]),
 
     socialLinks: [
       { icon: "github", link: "https://github.com/nukeguys" },
@@ -51,6 +63,10 @@ export default defineConfig({
     footer: {
       message: "Built with VitePress",
       copyright: "© 2026 nukeguys",
+    },
+
+    outline: {
+      level: "deep",
     },
 
     lastUpdated: {
