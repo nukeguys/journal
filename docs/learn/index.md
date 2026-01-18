@@ -1,3 +1,3 @@
 # Learn
 
-학습한 내용들을 정리합니다.
+> **"The purpose of learning is growth, and our minds, unlike our bodies, can continue growing as we live."**

@@ -45,6 +45,16 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "Notes", link: "/notes/" },
       { text: "Learn", link: "/learn/" },
+      { text: "OOTR", link: "https://ootr.kkick.xyz/" },
+      {
+        text: "More",
+        items: [
+          { text: "Brunch", link: "https://brunch.co.kr/@nukeguys" },
+          { text: "Dev", link: "https://nukeguys.github.io/dev" },
+          { text: "Life", link: "https://nukeguys.github.io/life" },
+          { text: "Book", link: "https://nukeguys.github.io/book" },
+        ],
+      },
     ],
 
     // 사이드바 자동 생성
@@ -79,6 +89,21 @@ export default defineConfig({
         hyphenToSpace: true,
         underscoreToSpace: true,
       },
+      {
+        documentRootPath: "docs",
+        scanStartPath: "inbox",
+        basePath: "/inbox/",
+        resolvePath: "/inbox/",
+        useTitleFromFileHeading: true,
+        useFolderTitleFromIndexFile: true,
+        useFolderLinkFromIndexFile: true,
+        rootGroupText: "Inbox",
+        rootGroupLink: "/",
+        collapsed: true,
+        capitalizeEachWords: true,
+        hyphenToSpace: true,
+        underscoreToSpace: true,
+      },
     ]),
 
     socialLinks: [
@@ -91,7 +116,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: "Built with VitePress",
+      message: "𝙁𝙡𝙪𝙘𝙩𝙪𝙖𝙩 𝙣𝙚𝙘 𝙢𝙚𝙧𝙜𝙞𝙩𝙪𝙧.",
       copyright: "© 2026 nukeguys",
     },
 

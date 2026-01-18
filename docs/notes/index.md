@@ -1,3 +1,3 @@
 # Notes
 
-개인 노트와 메모를 정리합니다.
+> **"The faintest ink is more powerful than the strongest memory."**

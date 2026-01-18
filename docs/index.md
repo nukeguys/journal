@@ -6,13 +6,6 @@ hero:
   name: SeungKyu’s Journal
   text: Record thoughts. Keep notes.
   tagline: A personal space for notes, thoughts, and learning.
-  actions:
-    - theme: brand
-      text: LinkedIn
-      link: https://www.linkedin.com/in/seungkyu-sung
-    - theme: alt
-      text: OOTR
-      link: https://ootr.kkick.xyz/
 
 features:
   - icon: ✏️
@@ -26,3 +19,9 @@ features:
     link: /learn/
     linkText: 둘러보기
 ---
+
+> Hello!  
+> I'm 👨🏻‍💻[Web Front-End Engineer](https://www.linkedin.com/in/seung-kyu-sung-42695241/).  
+> & 🧗🏻‍♂️`climber` and 🏃🏻‍♂️`runner` (will 🏕️`backpacker`, was 🧘🏻‍♂️`yogi`).  
+> & pursue 🙏🏻`minimalism` and respect 🌏`diversity`.  
+> & love 📖 +🎬 +⚽ +🥃.
