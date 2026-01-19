@@ -4,6 +4,7 @@ import wikilinks from "markdown-it-wikilinks";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lang: "ko-KR",
   title: "nukeguys",
   description: "Record unorganized thoughts. Keep organized notes.",
 
@@ -35,9 +36,6 @@ export default defineConfig({
     hostname: "https://journal.kkick.xyz",
   },
 
-  // 마지막 수정일 표시
-  lastUpdated: true,
-
   cleanUrls: true,
 
   themeConfig: {
@@ -46,7 +44,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Notes", link: "/notes/" },
-      { text: "Learn", link: "/learn/" },
+      { text: "AI", link: "/AI/" },
       { text: "OOTR", link: "https://ootr.kkick.xyz/" },
       {
         text: "More",
@@ -72,23 +70,25 @@ export default defineConfig({
         rootGroupText: "Notes",
         rootGroupLink: "/",
         collapsed: false,
-        collapseDepth: 3,
+        collapseDepth: 2,
         hyphenToSpace: true,
         underscoreToSpace: true,
+        sortFolderTo: "bottom",
       },
       {
         documentRootPath: "docs",
-        scanStartPath: "learn",
-        basePath: "/learn/",
-        resolvePath: "/learn/",
+        scanStartPath: "AI",
+        basePath: "/AI/",
+        resolvePath: "/AI/",
         useTitleFromFileHeading: true,
         useFolderTitleFromIndexFile: true,
         useFolderLinkFromIndexFile: true,
-        rootGroupText: "Learn",
+        rootGroupText: "AI",
         rootGroupLink: "/",
-        collapseDepth: 3,
+        collapseDepth: 2,
         hyphenToSpace: true,
         underscoreToSpace: true,
+        sortFolderTo: "bottom",
       },
       {
         documentRootPath: "docs",
@@ -100,9 +100,10 @@ export default defineConfig({
         useFolderLinkFromIndexFile: true,
         rootGroupText: "Inbox",
         rootGroupLink: "/",
-        collapseDepth: 3,
+        collapseDepth: 2,
         hyphenToSpace: true,
         underscoreToSpace: true,
+        sortFolderTo: "bottom",
       },
     ]),
 
@@ -125,7 +126,7 @@ export default defineConfig({
     },
 
     lastUpdated: {
-      text: "Last updated",
+      text: "Last Updated",
       formatOptions: {
         dateStyle: "medium",
         timeStyle: "short",

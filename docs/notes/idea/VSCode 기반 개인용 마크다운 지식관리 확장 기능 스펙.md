@@ -91,7 +91,7 @@
 예:
 
 - Meeting (notes/Meeting.md)
-- Meeting (docs/Meeting.md)
+- Meeting (notes/Meeting.md)
 
 ### 5.3 중복 파일 처리 정책
 
