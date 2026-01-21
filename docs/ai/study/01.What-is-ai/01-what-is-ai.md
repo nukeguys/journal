@@ -1,4 +1,4 @@
-# A1. AI란 무엇인가?
+# 01. AI란 무엇인가?
 
 ## 1. Week 1의 위치와 역할
 
@@ -41,7 +41,7 @@ AI 논의에서 비교적 합의되는 지능의 최소 요소:
 - 입력을 인식한다 (Perception)
 - 목표가 있다 (Goal)
 - 행동을 선택한다 (Decision)
-- 결과에 따라 행동이 달라진다 ([Adaptation](./Adaptation.md))
+- 결과에 따라 행동이 달라진다 ([Adaptation](./adaptation.md))
 
 핵심 포인트:
 
@@ -149,7 +149,7 @@ Machine Learning:
 
 **참고:**
 
-- [‘특징 추출’](./FeatureExtraction.md)이란 무엇을 중요한 정보로 볼지 결정하는 것
+- [‘특징 추출’](./feature-extraction.md)이란 무엇을 중요한 정보로 볼지 결정하는 것
 - ML에서는 사람이 지정
 - DL에서는 모델이 자동으로 학습
 - 이는 Week 2 이후 점점 구체화된다
@@ -159,7 +159,7 @@ Machine Learning:
 이 주차가 끝나면, 다음 질문에 답할 수 있어야 한다:
 
 - AI는 왜 정의가 계속 바뀌는가?
-- [지능적인 행동과 이해는 왜 다른가?](./지능적인%20행동과%20이해는%20왜%20다른가.md)
+- [지능적인 행동과 이해는 왜 다른가?](./intelligence-vs-understanding.md)
 - 왜 규칙 기반 접근은 실패했는가?
 - 오늘날 LLM은 Strong AI인가 Weak AI인가?
 - 현재 AI의 한계는 무엇에서 오는가?

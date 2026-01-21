@@ -2,7 +2,7 @@
 
 ## 1. RAG 아키텍처에서의 위치
 
-Thinking 모델은 주로 **'생성(Generation)'** 단계에 위치하지만, [RAG](<RAG%20(Retrieval-Augmented%20Generation).md>) 프로세스 전체를 지휘하는 **'추론 엔진'** 역할을 겸합니다.
+Thinking 모델은 주로 **'생성(Generation)'** 단계에 위치하지만, [RAG](./retrieval-augmented-generation.md) 프로세스 전체를 지휘하는 **'추론 엔진'** 역할을 겸합니다.
 
 - **기존 LLM:** 검색된 정보를 바탕으로 즉시 답변 생성 (반사적 답변).
 - **Thinking 모델:** 답변 전 "어떻게 검색하고 어떤 정보를 조합해야 최적일까?"를 스스로 생각(Chain of Thought)한 뒤 답변.

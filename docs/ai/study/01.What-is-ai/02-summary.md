@@ -1,4 +1,4 @@
-# A2. Summary
+# 02. Summary
 
 ## 이 주차의 목적
 

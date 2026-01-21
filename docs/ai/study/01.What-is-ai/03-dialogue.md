@@ -1,4 +1,4 @@
-# A3. Dialogue Log
+# 03. Dialogue Log
 
 ## 대화 1. Symbolic AI는 정말 AI인가?
 

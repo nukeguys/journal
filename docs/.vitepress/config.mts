@@ -1,6 +1,21 @@
 import { defineConfig } from "vitepress";
-import { generateSidebar } from "vitepress-sidebar";
+import { generateSidebar, } from "vitepress-sidebar";
 import wikilinks from "markdown-it-wikilinks";
+import { VitePressSidebarOptions } from "vitepress-sidebar/types";
+
+const commonSidebarOptions: VitePressSidebarOptions = {
+  documentRootPath: "docs",
+  useTitleFromFileHeading: true,
+  useFolderTitleFromIndexFile: true,
+  useFolderLinkFromIndexFile: true,
+  rootGroupLink: "/",
+  collapseDepth: 2,
+  hyphenToSpace: true,
+  underscoreToSpace: true,
+  sortFolderTo: "bottom",
+  sortMenusOrderNumericallyFromLink: true,
+  capitalizeFirst: true,
+};
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -60,50 +75,25 @@ export default defineConfig({
     // 사이드바 자동 생성
     sidebar: generateSidebar([
       {
-        documentRootPath: "docs",
+        ...commonSidebarOptions,
         scanStartPath: "notes",
         basePath: "/notes/",
         resolvePath: "/notes/",
-        useTitleFromFileHeading: true,
-        useFolderTitleFromIndexFile: true,
-        useFolderLinkFromIndexFile: true,
         rootGroupText: "Notes",
-        rootGroupLink: "/",
-        collapsed: false,
-        collapseDepth: 2,
-        hyphenToSpace: true,
-        underscoreToSpace: true,
-        sortFolderTo: "bottom",
       },
       {
-        documentRootPath: "docs",
+        ...commonSidebarOptions,
         scanStartPath: "ai",
         basePath: "/ai/",
         resolvePath: "/ai/",
-        useTitleFromFileHeading: true,
-        useFolderTitleFromIndexFile: true,
-        useFolderLinkFromIndexFile: true,
         rootGroupText: "AI",
-        rootGroupLink: "/",
-        collapseDepth: 2,
-        hyphenToSpace: true,
-        underscoreToSpace: true,
-        sortFolderTo: "bottom",
       },
       {
-        documentRootPath: "docs",
+        ...commonSidebarOptions,
         scanStartPath: "inbox",
         basePath: "/inbox/",
         resolvePath: "/inbox/",
-        useTitleFromFileHeading: true,
-        useFolderTitleFromIndexFile: true,
-        useFolderLinkFromIndexFile: true,
         rootGroupText: "Inbox",
-        rootGroupLink: "/",
-        collapseDepth: 2,
-        hyphenToSpace: true,
-        underscoreToSpace: true,
-        sortFolderTo: "bottom",
       },
     ]),
 

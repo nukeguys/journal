@@ -16,7 +16,7 @@ features:
   - icon: 📖
     title: Learn AI
     details: Intelligence is the ability to adapt to change.
-    link: /AI/
+    link: /ai/
     linkText: 둘러보기
 ---
 
