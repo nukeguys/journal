@@ -1,4 +1,4 @@
-# 02. Concept Map
+# 01. Concept Map
 
 ## Week 3의 핵심 질문 (단 하나)
 
